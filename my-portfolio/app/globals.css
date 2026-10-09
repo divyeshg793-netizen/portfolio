@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Autumnal, Natural and Warm Palette */
+  --color-blanket: #F2E0CF;
+  --color-autumn-fern: #854628;
+  --color-oak: #B48954;
+  --color-khaki-moss: #7C7458;
+  --color-mushroom: #D4C7B4;
+  --color-kimber: #2D2D23;
+
+  /* Remap base colors to our light mode palette */
+  --color-black: var(--color-blanket);
+  --color-white: var(--color-kimber);
+  
+  --color-neutral-300: var(--color-khaki-moss);
+  --color-neutral-400: var(--color-khaki-moss);
+  --color-neutral-500: var(--color-oak);
+  --color-neutral-600: var(--color-oak);
+  --color-neutral-800: var(--color-mushroom);
+  --color-neutral-900: var(--color-mushroom);
+  --color-neutral-950: #E6D5C4; /* slightly darker blanket for cards */
+  
+  --color-cyan-400: var(--color-autumn-fern);
+  --color-cyan-500: var(--color-autumn-fern);
+  
+  --color-indigo-400: var(--color-oak);
+  --color-indigo-500: var(--color-oak);
+  
+  --color-emerald-400: var(--color-khaki-moss);
+  --color-emerald-500: var(--color-khaki-moss);
+
+  --color-background: var(--color-blanket);
+  --color-foreground: var(--color-kimber);
+  
+  --font-serif: var(--font-playfair), Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+:root {
+  --background: #F2E0CF;
+  --foreground: #2D2D23;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
